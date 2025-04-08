@@ -671,6 +671,10 @@ PRICING
     z-index: 100;
 }
 
+.features .section__title, #pricing .section__title {
+    text-align: center;
+}
+
 .plan__stripe {
     position: absolute;
     top: 0;
@@ -766,6 +770,15 @@ PRICING
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
+.plan:nth-child(1) .plan__middle, .plan:nth-child(3 ) .plan__middle {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
 .plans__blob {
     z-index: -10;
     position: absolute;
@@ -776,6 +789,8 @@ PRICING
     width: 256px;
     opacity: 0.25;
 }
+
+
 
 /*
 
