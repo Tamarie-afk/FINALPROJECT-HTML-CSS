@@ -345,6 +345,11 @@ FEATURES
 
 */
 
+.Features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #features {
     position: relative;
 }
@@ -381,9 +386,8 @@ FEATURES
     height: 24px;
 }
 
-#feature__img--wrapper {
-    display: flex
-;
+.feature__img--wrapper {
+    display: flex;
     padding: 20px;
     border: 1px solid #e5e7eb;
     border-radius: 500px;
@@ -630,6 +634,10 @@ VALUES
 
 #values .btn {
     margin-top: 48px;
+}
+
+.value:nth-of-type(1) {
+    margin-top: 32px;
 }
 
 .value:nth-of-type(2) {
