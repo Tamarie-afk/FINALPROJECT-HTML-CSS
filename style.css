@@ -426,7 +426,7 @@ QUALITY WORK
 }
 
 .quality__description {
-    max-width: 576px;
+    width:100%;
     margin-right: 64px;
 }
 
@@ -650,6 +650,12 @@ PRICING
 
 */
 
+.plan {
+    display: flex;
+    flex-direction: column
+    width: calc(100%/3);
+}
+
 #pricing .row {
     display: flex;
     flex-direction: column;
@@ -663,10 +669,11 @@ PRICING
 
 .plans {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    position: relative;
-    z-index: 100;
+    
 }
 
 .features .section__title, #pricing .section__title {
