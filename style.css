@@ -685,9 +685,16 @@ PRICING
     text-align: center;
 }
 
-.plan__top .plan__middle .plan__bottom {
-    padding: 32px;
-    text-align: center;
+.plan__top,
+
+.plan__middle,
+
+.plan__bottom {
+
+padding: 32px;
+
+text-align: center;
+
 }
 
 .plan__name .plan__price .plan__duration {
@@ -719,6 +726,7 @@ PRICING
 
 .plan:nth-child(2) {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    
 }
 
 .plan__target {
@@ -777,6 +785,10 @@ PRICING
     border-bottom: 2px solid rgb(229, 231, 235);
 }
 
+.plan:nth-child(2) .plan__middle .plan__bottom {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
 .plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
     color: #f7fafc;
 }
@@ -856,6 +868,12 @@ TESTIMONIALS
     line-height: 1.625;
 }
 
+.testimonial__rating i {
+    color: rgba(246, 173, 85);
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
 .testimonial__role {
     color: #7c8ba1;
     font-weight: 500;
@@ -867,6 +885,10 @@ TESTIMONIALS
     align-items: center;
 }
 
+.testimonial__details {
+    margin-left: 24px;
+}
+
 .testimonial__img {
     width: 80px;
     height: 80px;
@@ -876,6 +898,12 @@ TESTIMONIALS
 .testimonial__bottom {
     display: flex;
     justify-content: space-between;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background: rgb(229, 231, 235);
 }
 
 .testimonial__buttons {
@@ -901,8 +929,6 @@ TESTIMONIALS
 
 
 
-
-
 /*
 
 START / CALL TO ACTION
@@ -912,6 +938,16 @@ START / CALL TO ACTION
 #start .row {
     position: relative;
     overflow: hidden;
+}
+
+.start__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .start__container {
@@ -930,6 +966,8 @@ START / CALL TO ACTION
     font-weight: 700;
     line-height: 1.5;
     z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
 .start__buttons {
@@ -986,6 +1024,13 @@ START / CALL TO ACTION
     z-index: 1;
     opacity: 0.5;
 }
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
 
 /*
 
@@ -1092,14 +1137,19 @@ footer {
     margin-left: 16px;
     padding: 8px;
     background: #f7fafc;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     z-index: 2;
     cursor: pointer;
     transition: all 300ms;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
 }
 
 .footer__social--link svg {
@@ -1176,6 +1226,10 @@ MOBILE RESPONSIVENESS
     }
     footer {
         padding: 80px 32px;
+    }
+    .plans {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
