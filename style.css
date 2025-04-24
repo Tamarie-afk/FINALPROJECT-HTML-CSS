@@ -459,6 +459,10 @@ QUALITY WORK
     z-index: 1;
 }
 
+.quality__img--wrapper {
+    position: relative;
+}
+
 .quality__grid {
     transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
     width: 80px;
@@ -493,6 +497,10 @@ STEPS
 
 .steps__img {
     z-index: 2;
+}
+
+.steps__img--wrapper {
+    position: relative;
 }
 
 .steps__grid {
